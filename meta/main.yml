@@ -1,0 +1,13 @@
+galaxy_info:
+  role_name: 'add_all_nodes_to_etc_hosts'
+  author: 'Johannes Kastl'
+  description: 'Add all nodes of a given ansible group to the /etc/hosts file'
+  company: 'B1 Systems GmbH'
+
+  license: 'BSD-3-Clause'
+
+  min_ansible_version: 2.4
+
+  galaxy_tags: []
+
+dependencies: []
