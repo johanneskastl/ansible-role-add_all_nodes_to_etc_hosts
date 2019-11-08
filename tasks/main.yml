@@ -5,6 +5,6 @@
   blockinfile:
     path: "/etc/hosts"
     block: |
-      {{ hostvars[item]['external_ip'] }} {{ item }} {{ item }}.{{ domain_name }}
+      {{ hostvars[item]['external_ip'] | default( hostvars[groups['first_master_node'][0]].ansible_default_ipv4.address ) }} {{ item }} {{ item }}.{{ domain_name }}
     marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item }}"
   with_items: "{{ groups['cluster_nodes'] }}"
