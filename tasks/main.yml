@@ -7,4 +7,4 @@
     block: |
       {{ hostvars[item]['external_ip'] | default( hostvars[item]['ansible_default_ipv4']['address'] ) }} {{ item }} {{ item }}.{{ domain_name }}
     marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item }}"
-  with_items: "{{ groups['cluster_nodes'] }}"
+  with_items: "{{ groups[group_name] }}"

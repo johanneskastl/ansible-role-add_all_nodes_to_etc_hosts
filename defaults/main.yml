@@ -2,3 +2,5 @@
 # defaults file for add_all_nodes_to_etc_hosts
 
 domain_name: "training.b1-systems.de"
+
+group_name: "cluster_nodes"
