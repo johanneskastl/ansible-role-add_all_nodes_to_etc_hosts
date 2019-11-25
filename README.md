@@ -13,7 +13,8 @@ Each host needs to have a variable called 'external_ip' defined, that will be us
 Role Variables
 --------------
 
-`domain_name`: Specify the domain part of the FQDN.
+- `domain_name`: Specify the domain part of the FQDN.
+- `group_name`: Which group of nodes should be iterated over and added to `/etc/hosts`. 
 
 Dependencies
 ------------
