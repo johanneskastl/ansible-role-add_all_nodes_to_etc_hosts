@@ -4,7 +4,6 @@
 - name: "Make sure all hosts are added to each node's /etc/hosts"
   lineinfile:
     path: "/etc/hosts"
-    block: |
-      {{ hostvars[item][ip_address_variable] | default( hostvars[item]['ansible_default_ipv4']['address'] ) }} {{ item }} {{ item }}.{{ domain_name }}
-    marker: "# {mark} ANSIBLE MANAGED BLOCK"
+    regexp: "{{ item }}"
+    line: "{{ hostvars[item][ip_address_variable] | default( hostvars[item]['ansible_default_ipv4']['address'] ) }} {{ item }} {{ item }}.{{ domain_name }}"
   with_items: "{{ groups[group_name] }}"
