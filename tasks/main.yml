@@ -1,8 +1,8 @@
 ---
 # tasks file for add_all_nodes_to_etc_hosts
 
-- name: "Make sure all hosts are added to each nodes /etc/hosts"
-  blockinfile:
+- name: "Make sure all hosts are added to each node's /etc/hosts"
+  lineinfile:
     path: "/etc/hosts"
     block: |
       {{ hostvars[item][ip_address_variable] | default( hostvars[item]['ansible_default_ipv4']['address'] ) }} {{ item }} {{ item }}.{{ domain_name }}
