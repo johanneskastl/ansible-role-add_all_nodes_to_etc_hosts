@@ -15,6 +15,7 @@ Role Variables
 
 - `domain_name`: Specify the domain part of the FQDN.
 - `group_name`: Which group of nodes should be iterated over and added to `/etc/hosts`. 
+- `ip_address_variable`: Which variables has the correct IP address. Default is `external_ip`.
 
 Dependencies
 ------------

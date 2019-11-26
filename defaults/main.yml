@@ -4,3 +4,5 @@
 domain_name: "training.b1-systems.de"
 
 group_name: "cluster_nodes"
+
+ip_address_variable: "external_ip"
