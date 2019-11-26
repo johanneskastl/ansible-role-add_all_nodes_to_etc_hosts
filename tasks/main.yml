@@ -6,5 +6,5 @@
     path: "/etc/hosts"
     block: |
       {{ hostvars[item][ip_address_variable] | default( hostvars[item]['ansible_default_ipv4']['address'] ) }} {{ item }} {{ item }}.{{ domain_name }}
-    marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item }}"
+    marker: "# {mark} ANSIBLE MANAGED BLOCK"
   with_items: "{{ groups[group_name] }}"
