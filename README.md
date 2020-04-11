@@ -1,3 +1,5 @@
+![Ansible Lint](https://github.com/johanneskastl/ansible-role-add_all_nodes_to_etc_hosts/workflows/Ansible%20Lint/badge.svg)
+
 add_all_nodes_to_etc_hosts
 =========
 
