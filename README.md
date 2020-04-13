@@ -15,9 +15,9 @@ Each host needs to have a variable called 'external_ip' defined, that will be us
 Role Variables
 --------------
 
-- `domain_name`: Specify the domain part of the FQDN.
-- `group_name`: Which group of nodes should be iterated over and added to `/etc/hosts`. 
-- `ip_address_variable`: Which variables has the correct IP address. Default is `external_ip`.
+- `domain_name`: Specify the domain part of the FQDN. Default value is `training.b1-systems.de`.
+- `group_name`: Which group of nodes should be iterated over and added to `/etc/hosts`? Default value is `cluster_nodes`.
+- `ip_address_variable`: Which variables has the correct IP address. Default value is `external_ip`.
 
 Dependencies
 ------------
