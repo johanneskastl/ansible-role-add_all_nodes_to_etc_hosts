@@ -5,5 +5,5 @@
   lineinfile:
     path: "/etc/hosts"
     regexp: "{{ item }}"
-    line: "{{ hostvars[item][ip_address_variable] | default( hostvars[item]['ansible_default_ipv4']['address'] ) }} {{ item }} {{ item }}.{{ domain_name }}"
+    line: "{{ hostvars[item][ip_address_variable] | default( hostvars[item]['ansible_default_ipv4']['address'] ) }} {{ item }}.{{ domain_name }} {{ item }}"
   with_items: "{{ groups[group_name] }}"
