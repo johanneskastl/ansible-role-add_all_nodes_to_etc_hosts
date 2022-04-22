@@ -1,5 +1,6 @@
 galaxy_info:
   role_name: 'add_all_nodes_to_etc_hosts'
+  namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Add all nodes of a given ansible group to the /etc/hosts file'
   company: 'B1 Systems GmbH'
