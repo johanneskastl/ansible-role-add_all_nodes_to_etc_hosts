@@ -29,7 +29,9 @@ Example Playbook
 
     - hosts: servers
       roles:
-         - { role: 'johanneskastl.add_all_nodes_to_etc_hosts', domain_name: 'example.org', group_name: 'webservers' }
+        - role: 'johanneskastl.add_all_nodes_to_etc_hosts'
+          domain_name: 'example.org'
+          group_name: 'webservers'
 
 License
 -------
