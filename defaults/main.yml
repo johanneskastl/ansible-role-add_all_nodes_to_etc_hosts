@@ -1,8 +1,6 @@
 ---
-# defaults file for add_all_nodes_to_etc_hosts
+# add_all_nodes_to_etc_hosts/defaults/main.yml
 
-domain_name: "training.b1-systems.de"
-
-group_name: "cluster_nodes"
-
-ip_address_variable: "external_ip"
+domain_name: 'example.org'
+group_name: 'cluster_nodes'
+ip_address_variable: 'external_ip'
