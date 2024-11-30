@@ -1,9 +1,9 @@
 ---
-# tasks file for add_all_nodes_to_etc_hosts
+# add_all_nodes_to_etc_hosts/tasks/main.yml
 
 - name: "Make sure all hosts are added to each node's /etc/hosts"
   ansible.builtin.lineinfile:
-    path: "/etc/hosts"
+    path: '/etc/hosts'
     regexp: "{{ item }}"
     line: "{{ hostvars[item][ip_address_variable] | default(hostvars[item]['ansible_default_ipv4']['address']) }} {{ item }}.{{ domain_name }} {{ item }}"
   with_items: "{{ groups[group_name] }}"
