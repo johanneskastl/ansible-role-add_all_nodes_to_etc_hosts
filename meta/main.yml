@@ -3,7 +3,6 @@ galaxy_info:
   namespace: 'johanneskastl'
   author: 'Johannes Kastl'
   description: 'Add all nodes of a given ansible group to the /etc/hosts file'
-  company: 'B1 Systems GmbH'
 
   license: 'BSD-3-Clause'
 
